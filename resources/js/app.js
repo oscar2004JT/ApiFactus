@@ -115,47 +115,6 @@ const endpoints = {
             ['number', 'Numero completo'],
         ],
     },
-    billPdf: {
-        title: 'Descargar PDF de factura',
-        method: 'GET',
-        url: '/api/factus/bills/{number}/download-pdf',
-        fields: [
-            ['number', 'Numero completo'],
-        ],
-    },
-    billXml: {
-        title: 'Descargar XML de factura',
-        method: 'GET',
-        url: '/api/factus/bills/{number}/download-xml',
-        fields: [
-            ['number', 'Numero completo'],
-        ],
-    },
-    billAttached: {
-        title: 'Descargar XML adjunto',
-        method: 'GET',
-        url: '/api/factus/bills/{number}/download-xml-attached-document',
-        fields: [
-            ['number', 'Numero completo'],
-        ],
-    },
-    billEvents: {
-        title: 'Consultar eventos RADIAN',
-        method: 'GET',
-        url: '/api/factus/bills/{number}/radian/events',
-        fields: [
-            ['number', 'Numero completo'],
-        ],
-    },
-    billEmail: {
-        title: 'Enviar factura por correo',
-        method: 'POST',
-        url: '/api/factus/bills/{number}/send-email',
-        fields: [
-            ['number', 'Numero completo', 'text', [], 'path'],
-            ['email', 'Correo destino', 'email', [], 'body'],
-        ],
-    },
     creditNotes: {
         title: 'Consultar notas credito',
         method: 'GET',
